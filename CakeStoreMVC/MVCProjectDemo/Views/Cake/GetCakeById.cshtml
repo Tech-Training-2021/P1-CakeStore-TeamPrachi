@@ -1,0 +1,50 @@
+﻿@model Data.Entities.FlavourType
+
+@{
+    ViewBag.Title = "GetCakeById";
+}
+
+<h2>GetCakeById</h2>
+
+<div>
+    <h4>FlavourType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FlavourID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlavourID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlavourTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlavourTypeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AvailableQuantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AvailableQuantity)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FlavourTypeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
