@@ -7,7 +7,7 @@ using Data.Entities;
 
 namespace Data
 {
-    public interface ICakeRepository
+    public interface IFlavourTypeRepository
     {
         IEnumerable<FlavourType> GetAllCakes();
 
@@ -15,12 +15,10 @@ namespace Data
 
         FlavourType GetCakeById(int cakeId);
 
-        void UpdateCake(FlavourType flavour);
+        FlavourType UpdateCake(int cakeid,FlavourType flavour);
+
+        void DeleteCake(int id);
 
         void Save();
-
-        
-
-        //void DeleteCake(int cakeId);
     }
 }

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MVCProjectDemo.Models.FlavourType>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2> All Cakes </h2>
+@Html.ActionLink("Add new flavour", "Create", "FlavourType")
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>FlavourName</th>
+            <th>FlavourTypeId</th>
+            <th>FlavourName</th>
+            <th>Price</th>
+            <th>Available Quantity</th>
+            <th>Image</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cakes in Model)
+        {
+            <tr>
+                <th scope="row">@cakes.FlavourID</th>
+                <td>@cakes.FlavourTypeID</td>
+                <td>@cakes.FlavourTypeName</td>
+                <td>@cakes.Price</td>
+                <td>@cakes.AvailableQuantity</td>
+                <td>@cakes.ImgUrl</td>
+                <td>@Html.ActionLink("Details", "GetCakesById", new { id = cakes.FlavourTypeID })</td>
+                <td>@Html.ActionLink("Edit", "Edit", new { id = cakes.FlavourTypeID })</td>
+                <td>@Html.ActionLink("Delete", "DeleteCake", new { id = cakes.FlavourTypeID })</td>
+            </tr>
+        }
+    </tbody>
+    @Html.ActionLink("Back", "Modify", "Home")
+</table>

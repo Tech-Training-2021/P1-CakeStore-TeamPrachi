@@ -50,15 +50,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Repositories\CakeRepository.cs" />
     <Compile Include="Entities\CakeModel.cs" />
     <Compile Include="Entities\CakeOrder.cs" />
     <Compile Include="Entities\Flavour.cs" />
     <Compile Include="Entities\FlavourType.cs" />
-    <Compile Include="Entities\OrderDetail.cs" />
+    <Compile Include="Entities\Menu.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\OrderHistory.cs" />
     <Compile Include="Entities\UserTbl.cs" />
-    <Compile Include="Repositories\ICakeRepository.cs" />
+    <Compile Include="Repositories\FlavourRepository.cs" />
+    <Compile Include="Repositories\FlavourTypeRepository.cs" />
+    <Compile Include="Repositories\IFlavourRepository.cs" />
+    <Compile Include="Repositories\IFlavourTypeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IOrder.cs" />
+    <Compile Include="Repositories\IUserRepository.cs" />
+    <Compile Include="Repositories\Order.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

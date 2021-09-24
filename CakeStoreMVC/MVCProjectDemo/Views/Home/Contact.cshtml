@@ -1,17 +1,72 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<link href="~/CSS/Contact.css" rel="stylesheet" />
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+
+
+<script>
+  let colArray=['black', 'grey'];
+  let i=0;
+
+$(function(){
+ $('.two').css(
+ {
+    height:'300px',
+    width: '500px',
+      border:'2px dashed white',
+      borderRadius:'50px',
+       backgroundColor:'black'
+   });
+
+   setInterval(function(){
+       changeColor();
+   },2000);
+   function changeColor(){
+       $('.two').css({backgroundColor:colArray[i]});
+       if(i==(colArray.length-1))
+       i=0;
+       else
+       i++;
+   }
+   });
+
+</script>
+<br>
+<br>
+
+<p style="color: white; font-family: initial; font-weight: bold; font-size: 50px; font-style: italic;">
+    Thank you for using our services!
+</p>
+<div class="d1">
+
+    <p class="two">
+        <br><br>
+        It has been a pleasure serving you.
+        We at Bake a Cake's pride in giving priority to their customers and looking after their needs.
+        <br><br>
+        Thank you again for choosing us. Looking forward to having you as one of our valued customers again.
+    </p>
+</div>
+
+<br>
+<hr>
+<div class="d2">
+
+    <p class="one">Contact</p>
+    <br>
+    <form style="margin-left:20px;">
+        <input type="text" name="uname" placeholder="Name*" required>
+        <br><br><br>
+        <input type="email" name="mail" placeholder="Email*" required>
+        <br><br><br>
+
+        <textarea type="message" name="comment" rows="8" cols="30" placeholder="Your comments:"></textarea>
+        <br><br><br>
+
+        <input type="submit" value="Send"><br><br>
+    </form>
+</div>
+
+

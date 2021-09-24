@@ -2,30 +2,196 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<section>
+    <background img src="~/Images/background.jpg" />
+    <div class="slideshow-container">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="~/Images/p1.jpeg" style="width: 100%" height="500" />
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="~/Images/p2.jpeg" style="width: 100%" height="500" />
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="~/Images/p3.jpeg" style="width: 100%" height="500" />
+
+        </div>
+
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <br>
+
+    <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</section>
+<link href="~/CSS/homepagestyle.css" rel="stylesheet" />
+<section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <center>
+                        <h2>Check out our latest arrivals</h2>
+                        <p><b>Welcome to a magnificent experience of rich taste & celebrate the finest moments of life.</b></p>
+                    </center>
+                </div>
+            </div>
+            @*<div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="~/Images/p5.jpeg" width="150px" height="150" />
+                        <h4>Chocloate Cake</h4>
+                        <p class="text-justify">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="~/Images/p4.jpeg" width="150px" height="150" />
+                        <h4>Vanilla</h4>
+                        <p class="text-justify">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="~/Images/Rasmalai.jpg" width="150px" height="150" />
+                        <h4>Rasmalai Cake</h4>
+                        <p class="text-justify">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
+                    </center>
+                </div>
+            </div>*@
+        </div>
+    </section>
+<br />
+
+<section class="MainSection">
+    <br />
+    <br />
+    <section class="section">
+        <div class="paras">
+            <p class="textbig">Chocolate Cakes</p>
+            <p class="textsmall">
+                The history of chocolate cake goes back to 1764, when
+                Dr. James Baker discovered how to make chocolate by grinding cocoa beans
+                between two massive circular millstones. Home Today Is The First Chocolate
+                “Cake” Was Made In 1764.Chocolate cake is a cake flavored with melted chocolate,
+                cocoa powder, or both. From it’s delicious taste, to its rich texture, the chocolate
+                cake is considered to be one of the best desserts of all time .Chocolate cake is
+                made with chocolate. It can also include other ingredients such as fudge, vanilla
+                creme, and other sweeteners. <b>
+                    We make fresh chocolate from fine quality cocoa beans.
+                    So what are you waiting for order now to experience the premium flavours.
+                </b>
+            </p>
+        </div>
+        <img src="~/Images/Chocolate.jpeg" alt="img" class="imgfluid" />
+    </section>
+    <br />
+    <br />
+    <section class="section section-left">
+        <div class="paras">
+            <p class="textbig">Vanilla Cakes</p>
+            <p class="textsmall">
+                Banana cake with cream cheese: Use up over-ripe bananas
+                to create a crowd-pleasing afternoon-tea
+                Chocolate coconut cake: A hint of coconut takes this moist chocolate cake
+                to a whole new level, Chocolate mud cupcakes.Classic no-bake anilla
+                cheese: Entertain with ease using this classic no-bake vanilla cheesecake.
+                It will be the star of the show. Baked lemon cheesecake: Fresh lemons ‘rind’
+                off this dessert beautifully! and many more.<b>
+                    These are just trailer our movie
+                    has wide varieties and styles of cakes, cupcakes, wedding cakes.
+                </b>
+            </p>
+        </div>
+        <img src="~/Images/Vanilla.jpeg" alt="img" class="imgfluid" />
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="textbig">Strawberry Cakes</p>
+            <p class="textsmall">
+                A cupcake is a small cake designed to serve o
+                person, which may be baked in a small thin paper or aluminum
+                cup. As with larger cakes, frosting and other cake decorations
+                such as fruit and candy may be applied. As with larger cakes, frosting
+                and other cake decorations such as fruit and candy may be applied. Peanut butter,
+                chocolate, vanilla, coffee, red velvet and carrot cake are some of the
+                most popular flavors of cupcake. <b>
+                    We make customised cup cakes which are made
+                    on the basis of orders, with fresh frosting and ingredients. Order Now!
+                </b>
+            </p>
+        </div>
+        <img src="~/Images/Strawberry.jpeg" alt="img" class="imgfluid" />
+    </section>
+
+    <section class="section section-left">
+        <div class="paras">
+            <p class="textbig">Rasmalai Cakes</p>
+            <p class="textsmall">
+                Banana cake with cream cheese: Use up over-ripe bananas
+                to create a crowd-pleasing afternoon-tea
+                Chocolate coconut cake: A hint of coconut takes this moist chocolate cake
+                to a whole new level, Chocolate mud cupcakes.Classic no-bake anilla
+                cheese: Entertain with ease using this classic no-bake vanilla cheesecake.
+                It will be the star of the show. Baked lemon cheesecake: Fresh lemons ‘rind’
+                off this dessert beautifully! and many more.<b>
+                    These are just trailer our movie
+                    has wide varieties and styles of cakes, cupcakes, wedding cakes.
+                </b>
+            </p>
+        </div>
+        <img src="~/Images/Rasmalai.jpeg" alt="img" class="imgfluid" />
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="textbig">Pineapple Cakes</p>
+            <p class="textsmall">
+                A cupcake is a small cake designed to serve o
+                person, which may be baked in a small thin paper or aluminum
+                cup. As with larger cakes, frosting and other cake decorations
+                such as fruit and candy may be applied. As with larger cakes, frosting
+                and other cake decorations such as fruit and candy may be applied. Peanut butter,
+                chocolate, vanilla, coffee, red velvet and carrot cake are some of the
+                most popular flavors of cupcake. <b>
+                    We make customised cup cakes which are made
+                    on the basis of orders, with fresh frosting and ingredients. Order Now!
+                </b>
+            </p>
+        </div>
+        <img src="~/Images/Pineapple.jpeg" alt="img" class="imgfluid" />
+    </section>
+
+</section>

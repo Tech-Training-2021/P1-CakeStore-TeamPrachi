@@ -1,0 +1,45 @@
+﻿p.two {
+    color: white;
+    font-size: 22px;
+    font-family: calibri light;
+    margin: 20px;
+}
+
+textarea {
+    width: 50%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+input {
+    width: 50%;
+    height: 70px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+p.two {
+    color: white;
+    font-size: 22px;
+    font-family: calibri light;
+    margin: 20px;
+}
+
+
+body {
+    background-image: url('../Images/back-ground.jpg');
+  
+    margin: 0;
+}
+p.one {
+    color: white;
+    font-size: 40px;
+    font-family: Lucida Console;
+    margin-left: 20px;
+    font-weight: bold;
+}

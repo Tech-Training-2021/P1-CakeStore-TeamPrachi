@@ -1,0 +1,48 @@
+.product-container{
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin-top: 100px;
+    border: 3px;
+    font-style: inherit;
+   
+    
+
+}
+body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 20px 20px 20px;
+}
+.four{
+    width: 320px; 
+    padding-left: 140px;
+}
+.price{
+    color: rgb(79, 79, 109) ;
+    width: 200px;
+     margin-left: 140px;
+}
+.button{
+    width: 100px; 
+    margin-left: 150px;
+    
+}
+.product-container{
+    height: 230px;
+}
+.maincontainer{
+   height:1200px;
+   
+}
+.product-container img{
+    width: 200px; 
+     margin-left: 100px;
+}
+body {
+background-color:#e7e2c3;
+background-size: cover;
+height: 200vh;
+
+}

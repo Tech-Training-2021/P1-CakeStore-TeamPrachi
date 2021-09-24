@@ -13,14 +13,12 @@ namespace Data.Entities
         public FlavourType()
         {
             CakeOrders = new HashSet<CakeOrder>();
-            OrderDetails = new HashSet<OrderDetail>();
         }
 
         public int FlavourTypeID { get; set; }
 
         public int FlavourID { get; set; }
 
-        [Required]
         [StringLength(100)]
         public string FlavourTypeName { get; set; }
 
@@ -28,12 +26,11 @@ namespace Data.Entities
 
         public int? AvailableQuantity { get; set; }
 
+        public string ImgUrl { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CakeOrder> CakeOrders { get; set; }
 
         public virtual Flavour Flavour { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

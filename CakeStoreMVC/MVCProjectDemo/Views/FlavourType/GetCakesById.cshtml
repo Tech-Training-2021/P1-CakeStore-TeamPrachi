@@ -1,15 +1,23 @@
-﻿@model Data.Entities.FlavourType
+﻿@model MVCProjectDemo.Models.FlavourType
 
 @{
-    ViewBag.Title = "GetCakeById";
+    ViewBag.Title = "GetCakesById";
 }
 
-<h2>GetCakeById</h2>
+<h2>GetCakesById</h2>
 
 <div>
-    <h4>FlavourType</h4>
+    <h4>Cake</h4>
     <hr />
     <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FlavourTypeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlavourTypeID)
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.FlavourID)
         </dt>
@@ -42,9 +50,17 @@
             @Html.DisplayFor(model => model.AvailableQuantity)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgUrl)
+        </dd>
+
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.FlavourTypeID }) |
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

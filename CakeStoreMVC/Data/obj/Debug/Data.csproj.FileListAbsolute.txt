@@ -10,3 +10,27 @@ C:\MVCProject\MVCProjectDemo\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
 C:\MVCProject\MVCProjectDemo\Data\obj\Debug\Data.csproj.CopyComplete
 C:\MVCProject\MVCProjectDemo\Data\obj\Debug\Data.dll
 C:\MVCProject\MVCProjectDemo\Data\obj\Debug\Data.pdb
+C:\MVCProjectDemo\Data\bin\Debug\Data.dll.config
+C:\MVCProjectDemo\Data\bin\Debug\Data.dll
+C:\MVCProjectDemo\Data\bin\Debug\Data.pdb
+C:\MVCProjectDemo\Data\bin\Debug\EntityFramework.dll
+C:\MVCProjectDemo\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\MVCProjectDemo\Data\bin\Debug\EntityFramework.xml
+C:\MVCProjectDemo\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\MVCProjectDemo\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\MVCProjectDemo\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\MVCProjectDemo\Data\obj\Debug\Data.csproj.CopyComplete
+C:\MVCProjectDemo\Data\obj\Debug\Data.dll
+C:\MVCProjectDemo\Data\obj\Debug\Data.pdb
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\bin\Debug\Data.dll.config
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\bin\Debug\Data.dll
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\bin\Debug\Data.pdb
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\bin\Debug\EntityFramework.dll
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\bin\Debug\EntityFramework.xml
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\obj\Debug\Data.dll
+C:\Users\lenovo\Downloads\MVCProjectDemo (2)\MVCProjectDemo\Data\obj\Debug\Data.pdb

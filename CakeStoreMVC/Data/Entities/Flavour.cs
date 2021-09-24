@@ -13,6 +13,9 @@ namespace Data.Entities
         public Flavour()
         {
             FlavourTypes = new HashSet<FlavourType>();
+            Menus = new HashSet<Menu>();
+            Orders = new HashSet<Order>();
+            OrderHistories = new HashSet<OrderHistory>();
         }
 
         public int FlavourID { get; set; }
@@ -23,5 +26,14 @@ namespace Data.Entities
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FlavourType> FlavourTypes { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Menu> Menus { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Order> Orders { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OrderHistory> OrderHistories { get; set; }
     }
 }
